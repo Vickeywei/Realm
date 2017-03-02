@@ -13,6 +13,9 @@
 		3E7D95AF1E2711A900C4112D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E7D95AD1E2711A900C4112D /* Main.storyboard */; };
 		3E7D95B11E2711A900C4112D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E7D95B01E2711A900C4112D /* Assets.xcassets */; };
 		3E7D95B41E2711A900C4112D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E7D95B21E2711A900C4112D /* LaunchScreen.storyboard */; };
+		3E7D95BD1E27124B00C4112D /* WQDataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7D95BC1E27124B00C4112D /* WQDataBaseManager.m */; };
+		3E7D95C01E27196D00C4112D /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7D95BF1E27196D00C4112D /* UserInfo.m */; };
+		E11A52FB928DEFFC3521DD2E /* libPods-Realm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDB1D3A70C25B6C9298303B3 /* libPods-Realm.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,13 @@
 		3E7D95B01E2711A900C4112D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E7D95B31E2711A900C4112D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E7D95B51E2711A900C4112D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E7D95BB1E27124B00C4112D /* WQDataBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQDataBaseManager.h; sourceTree = "<group>"; };
+		3E7D95BC1E27124B00C4112D /* WQDataBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQDataBaseManager.m; sourceTree = "<group>"; };
+		3E7D95BE1E27196D00C4112D /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
+		3E7D95BF1E27196D00C4112D /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
+		41608BBCA97BA9A758CAEC0B /* Pods-Realm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Realm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Realm/Pods-Realm.debug.xcconfig"; sourceTree = "<group>"; };
+		ACCEB8EBB70BA08A4390375A /* Pods-Realm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Realm.release.xcconfig"; path = "Pods/Target Support Files/Pods-Realm/Pods-Realm.release.xcconfig"; sourceTree = "<group>"; };
+		BDB1D3A70C25B6C9298303B3 /* libPods-Realm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Realm.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E11A52FB928DEFFC3521DD2E /* libPods-Realm.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +55,8 @@
 			children = (
 				3E7D95A31E2711A900C4112D /* Realm */,
 				3E7D95A21E2711A900C4112D /* Products */,
+				6F6F53FF64A5DFD90124EFF5 /* Pods */,
+				8E692F18AF0BF9F981F562AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +73,10 @@
 			children = (
 				3E7D95A71E2711A900C4112D /* AppDelegate.h */,
 				3E7D95A81E2711A900C4112D /* AppDelegate.m */,
+				3E7D95BB1E27124B00C4112D /* WQDataBaseManager.h */,
+				3E7D95BC1E27124B00C4112D /* WQDataBaseManager.m */,
+				3E7D95BE1E27196D00C4112D /* UserInfo.h */,
+				3E7D95BF1E27196D00C4112D /* UserInfo.m */,
 				3E7D95AA1E2711A900C4112D /* ViewController.h */,
 				3E7D95AB1E2711A900C4112D /* ViewController.m */,
 				3E7D95AD1E2711A900C4112D /* Main.storyboard */,
@@ -79,6 +96,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6F6F53FF64A5DFD90124EFF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41608BBCA97BA9A758CAEC0B /* Pods-Realm.debug.xcconfig */,
+				ACCEB8EBB70BA08A4390375A /* Pods-Realm.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8E692F18AF0BF9F981F562AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDB1D3A70C25B6C9298303B3 /* libPods-Realm.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +120,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E7D95B81E2711A900C4112D /* Build configuration list for PBXNativeTarget "Realm" */;
 			buildPhases = (
+				3BCEFD65B2180AC8E06A9253 /* [CP] Check Pods Manifest.lock */,
 				3E7D959D1E2711A900C4112D /* Sources */,
 				3E7D959E1E2711A900C4112D /* Frameworks */,
 				3E7D959F1E2711A900C4112D /* Resources */,
+				883A0169947B643B3D2249AE /* [CP] Embed Pods Frameworks */,
+				76E98A53B0BCEE5E25D3F9A3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,6 +183,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3BCEFD65B2180AC8E06A9253 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		76E98A53B0BCEE5E25D3F9A3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Realm/Pods-Realm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		883A0169947B643B3D2249AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Realm/Pods-Realm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3E7D959D1E2711A900C4112D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -153,6 +238,8 @@
 			files = (
 				3E7D95AC1E2711A900C4112D /* ViewController.m in Sources */,
 				3E7D95A91E2711A900C4112D /* AppDelegate.m in Sources */,
+				3E7D95BD1E27124B00C4112D /* WQDataBaseManager.m in Sources */,
+				3E7D95C01E27196D00C4112D /* UserInfo.m in Sources */,
 				3E7D95A61E2711A900C4112D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +358,7 @@
 		};
 		3E7D95B91E2711A900C4112D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41608BBCA97BA9A758CAEC0B /* Pods-Realm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NYRBZT6Z59;
@@ -283,6 +371,7 @@
 		};
 		3E7D95BA1E2711A900C4112D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACCEB8EBB70BA08A4390375A /* Pods-Realm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NYRBZT6Z59;
@@ -312,6 +401,7 @@
 				3E7D95BA1E2711A900C4112D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

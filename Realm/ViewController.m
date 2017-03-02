@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "WQDataBaseManager.h"
 @interface ViewController ()
 
 @end
@@ -16,6 +16,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSString *filePath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject];
+    filePath = [filePath stringByAppendingPathComponent:@"first.realm"];
+    NSLog(@"%@",filePath);
+    [[WQDataBaseManager shareInstance] creatRealmWithFilePath:filePath];
+    NSLog(@"%@",[WQDataBaseManager shareInstance].realm);
+    
+    
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
